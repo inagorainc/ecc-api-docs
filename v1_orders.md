@@ -5,11 +5,9 @@
 
 | Name          | Description                                                 |
 |---------------|-------------------------------------------------------------|
-| id | 弊社が付与するオーダーをユニークにするID（任意） |
+| order_code | 弊社が付与するオーダーをユニークにするID（任意） |
 | start_ordered | 注文日時指定開始　yyyy-mm-dd hh:mm:ss（任意） |
 | end_ordered | 注文日時指定終了　yyyy-mm-dd hh:mm:ss（任意） |
-| limit | 取得上限(任意 デフォルト: 10, MAX: 100) |
-| offset | オフセット(任意 デフォルト: 0)|
 
 
 ## レスポンス例
@@ -22,6 +20,7 @@
       {
         "jancode":"6853856647891",
         "sku_code":"smc123",
+        "price":530,
         "quantity":1
       }
     ],
@@ -33,11 +32,13 @@
       {
         "jancode":"6853856647891",
         "sku_code":"smc123",
+        "price":530,
         "quantity":1
       },
       {
         "jancode":"6853856645555",
         "sku_code":"smc567",
+        "price":1000,
         "quantity":2
       }
     ],
@@ -58,7 +59,9 @@
   JAN CODE
   * sku_code
   SKUコード
-  * quantity
+  * price
+  単価（税抜）
+  * quantity
   商品ごとの数量
 * order_date
   注文日時（yyyy-mm-dd hh:mm:ss+0900）
