@@ -27,8 +27,11 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 ## API
 
 ## 注文
-* [GET /v1/orders](v1_orders.md) - 注文情報一覧を取得
+* [GET /api/v1/orders](v1_orders.md) - 注文情報一覧を取得
+* [POST /api/v1/orders](v1_orders_post.md) - 注文取得通知
 
 ## 発送
+* [POST /api/v1/shipping](v1_shipping.md) - 発送情報を登録
 
 ## 在庫
+* [PUT /api/v1/stock](v1_stock.md) - 在庫更新
