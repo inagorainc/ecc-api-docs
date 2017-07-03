@@ -21,6 +21,7 @@ APIドキュメントです。
 ## API
 
 ## 注文
+* [GET /v1/orders](v1_orders.md) - 注文情報一覧を取得
 
 ## 発送
 
