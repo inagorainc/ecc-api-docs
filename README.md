@@ -39,7 +39,11 @@ $strSignature = hash_hmac("sha256", $strMessage, $strAccessSecret); *
 すべてJSON形式を利用します。
 POSTのリクエストに対しては、Content-Typeヘッダに「application/json」を指定してください。
 
-正常時、HTTPステータスコード[GET]200 [POST]201 [PUT]204を返します。
+正常時、以下のHTTPステータスコードを返します。
+
+  * GET 200
+  * POST 201
+  * PUT 204
 
 異常時、HTTPステータスコード400を返します。
 
