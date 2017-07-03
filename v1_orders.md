@@ -47,4 +47,18 @@
 }
 ```
 
-## 項目説明
+## レスポンス内容説明
+* data
+  すべてのデータ内容
+* id
+  弊社が付与するオーダーをユニークにするID
+* orderes
+  注文内容
+  * jancode
+  JAN CODE
+  * sku_code
+  SKUコード
+  * quantity
+  商品ごとの数量
+* order_date
+  注文日時（yyyy-mm-dd hh:mm:ss+0900）
