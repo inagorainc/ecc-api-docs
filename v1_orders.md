@@ -61,7 +61,7 @@
   SKUコード
   * price
   単価（税抜）
-  * quantity
+  * quantity
   商品ごとの数量
 * order_date
   注文日時（yyyy-mm-dd hh:mm:ss+0900）
