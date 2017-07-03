@@ -15,7 +15,26 @@ APIドキュメントです。
   https://supplier.wonderfull.jp/
 
 ### 認証
+Wandou APIの呼び出しには、API KEY認証が必要になります。弊社がお知らせしたAPI KEYとAPI SECRETを使用します。API KEYとAPI SECRETは、外部に公開しないでください。
 
+APIを呼び出す際、HTTP Headerに下記3点を含めてリクエストしてください。
+
+1) ACCESS-KEY: API KEY
+2) ACCESS-TIMESTAMP: UNIXタイムスタンプ
+3) ACCESS-SIGNATURE: ACCESS-TIMESTAMP, API KEY, HTTP-METHODを文字列にし連結したものを、API SECRETでHMAC-SHA256で署名
+
+e.g.
+```
+<PHP CODE>
+$intTimeStamp = time(); *
+$strAccessKey = "API_KEY"; *
+$strAccessSecret = "API_SECRET";
+$srtHttpMethod = "POST";
+$strMessage = $intTimeStamp . $strAccessKey. $srtHttpMethod;
+$strSignature = hash_hmac("sha256", $strMessage, $strAccessSecret); *
+```
+
+*は、Headerに含めてリクエストするもの。
 ### データ形式
 すべてJSON形式を利用します。
 POSTのリクエストに対しては、Content-Typeヘッダに「application/json」を指定してください。
