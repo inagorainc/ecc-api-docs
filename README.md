@@ -6,11 +6,11 @@ APIドキュメントです。
 
 ## 仕様
 ### エンドポイント
-+ stg環境
+* staging環境
 
-  http://supplier.stg.wonderfull.jp/
+  https://supplier.stg.wonderfull.jp/
 
-+ 本番環境
+* 本番環境
 
   https://supplier.wonderfull.jp/
 
