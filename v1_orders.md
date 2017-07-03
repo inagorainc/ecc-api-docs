@@ -1,4 +1,4 @@
-# GET /v1/orders
+# GET /api/v1/orders
 注文情報一覧取得
 
 ## リクエストパラメータ
