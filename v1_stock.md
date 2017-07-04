@@ -13,10 +13,12 @@
 ```json
 Content-Type: application/json
 
-{
-  "jancode": "6853856647891",
-  "stock": 30
-}
+[
+  {
+    "jancode": "6853856647891",
+    "stock": 30
+  }
+]
 ```
 
 ## レスポンス例
