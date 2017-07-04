@@ -37,7 +37,7 @@ Content-Type: application/json
   "errors":[
     {
       "order_code": "ECN000110189822",
-      "message": "存在しない注文番号です"
+      "message": "存在しない注文番号です"
     }
   ]
 }
