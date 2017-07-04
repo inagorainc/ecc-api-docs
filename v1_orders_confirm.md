@@ -10,14 +10,9 @@
 ```json
 Content-Type: application/json
 
-[
-  {
-    "order_code": "ECN000110189822"
-  },
-  {
-    "order_code": "ECN000110189823"
-  }
-]
+{
+  "order_code": ["ECN000110189822", "ECN000110189823"]
+}
 ```
 
 ## レスポンスの例
