@@ -9,7 +9,26 @@
 | sku_code | 商品SKUコード（jancode/sku_codeとどちらか必須） |
 | stock | 在庫数（必須） |
 
+## リクエスト例
+```json
+Content-Type: application/json
+
+{
+  "jancode": "6853856647891",
+  "stock": 30
+}
+```
+
 ## レスポンス例
 正常時HTTPコード204を返します
 
 ## エラーレスポンス例
+```json
+{
+"errors":[
+  {
+    "message":""
+  }
+]
+}
+```
