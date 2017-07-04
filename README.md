@@ -41,9 +41,9 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 
 正常時、以下のHTTPステータスコードを返します。
 
-  * GET 200
-  * POST 201
-  * PUT 204
+  * GET 200 ok
+  * POST 201 created
+  * PUT 204 no content
 
 異常時、HTTPステータスコード400を返します。
 
@@ -51,7 +51,7 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 
 ## 注文
 * [GET /api/v1/orders](v1_orders.md) - 注文情報一覧を取得
-* [POST /api/v1/orders](v1_orders_post.md) - 注文取得通知
+* [POST /api/v1/orders/confirm](v1_orders_confirm.md) - 注文取得通知
 
 ## 発送
 * [POST /api/v1/shipping](v1_shipping.md) - 発送情報を登録
