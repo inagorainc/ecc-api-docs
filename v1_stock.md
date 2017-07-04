@@ -25,11 +25,11 @@ Content-Type: application/json
 ## エラーレスポンス例
 ```json
 {
-"errors":[
-  {
-    "jancode": "6853856647891",
-    "message": "存在しない商品です"
-  }
-]
+  "errors":[
+    {
+      "jancode": "6853856647891",
+      "message": "存在しない商品です"
+    }
+  ]
 }
 ```
