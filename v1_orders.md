@@ -6,12 +6,12 @@
 
 | Name          | Description                                                 |
 |---------------|-------------------------------------------------------------|
-| start_ordered | 注文日時指定開始　yyyy-mm-dd hh:mm:ss（任意） |
-| end_ordered | 注文日時指定終了　yyyy-mm-dd hh:mm:ss（任意） |
+| start_ordered | 注文日時指定開始　yyyy-mm-dd または yyyy-mm-dd hh:mm:ss（任意） |
+| end_ordered | 注文日時指定終了yyyy-mm-dd または 　yyyy-mm-dd hh:mm:ss（任意） |
 
 ## リクエスト例
 ```json
-/api/v1/orders?start_ordered
+GET /api/v1/orders?start_ordered=2017-06-01&end_ordered=2017-06-30 23:59:59
 ```
 
 ## レスポンス例
