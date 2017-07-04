@@ -55,9 +55,9 @@ GET /api/v1/orders?start_ordered=2017-06-01&end_ordered=2017-06-30 23:59:59
 ## レスポンス内容説明
 * data
   すべてのデータ内容
-* id
+* order_code
   弊社が付与するオーダーをユニークにするID
-* orderes
+* orders
   注文内容
   * jancode
   JAN CODE
