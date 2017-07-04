@@ -1,11 +1,11 @@
 # GET /api/v1/orders
-注文情報一覧取得
+未確認の注文情報一覧取得
+> 未確認とは - orders/confirmで確認されていないものを取得
 
 ## リクエストパラメータ
 
 | Name          | Description                                                 |
 |---------------|-------------------------------------------------------------|
-| order_code | 弊社が付与するオーダーをユニークにするID（任意） |
 | start_ordered | 注文日時指定開始　yyyy-mm-dd hh:mm:ss（任意） |
 | end_ordered | 注文日時指定終了　yyyy-mm-dd hh:mm:ss（任意） |
 
