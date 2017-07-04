@@ -21,7 +21,9 @@ Content-Type: application/json
 ```
 
 ## レスポンスの例
-HTTPステータス201を返します。
+```json
+201 Created
+```
 
 ## エラーレスポンスの例
 ```json
