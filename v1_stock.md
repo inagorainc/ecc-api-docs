@@ -27,7 +27,8 @@ Content-Type: application/json
 {
 "errors":[
   {
-    "message":""
+    "jancode": "6853856647891"
+    "message": "存在しない商品です"
   }
 ]
 }
