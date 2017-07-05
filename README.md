@@ -53,7 +53,7 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 
 異常時、HTTPステータスコード400と、エラーメッセージを返します。
 ```json
-HTTP/1.1 400 Bad Request
+400 Bad Request
 
 {
   "errors": [
