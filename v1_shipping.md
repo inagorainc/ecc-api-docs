@@ -28,6 +28,7 @@ Content-Type: application/json
 ```json
 201 Created
 ```
+※bodyは返しません
 
 ## エラーレスポンス例
 ```json
