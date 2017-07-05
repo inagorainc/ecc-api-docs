@@ -53,6 +53,9 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 
 異常時、HTTPステータスコード400を返します。
 
+### エラーコード
+* [エラーコード一覧](error_code.md)
+
 ## API
 
 ## 注文
