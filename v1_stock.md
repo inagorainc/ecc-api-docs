@@ -44,7 +44,7 @@ Content-Type: application/json
     },
     {
       "sku_code": "sku5567",
-      "message": "存在しないSKUコードです"
+      "message": "存在しないSKUコードです"
     }
   ]
 }
