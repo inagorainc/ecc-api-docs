@@ -1,16 +1,13 @@
 # POST /api/v1/shipping
-発送情報を通知
+出荷情報を通知
 
 ## リクエストパラメータ
 
-| Name          | Description                                                 |
-|---------------|-------------------------------------------------------------|
-| order_code | 弊社が付与するオーダーをユニークにするID（必須） |
-| jancode |1つのOrder_id内に含まれる商品のJancode(jancode/sku_codeどちらか必須) |
-| sku_code | 1つのOrder_id内に含まれる商品のSKUコード(jancode/sku_codeどちらか必須) |
-| quantity | 商品ごとの数量（必須） |
-| shipping_number | 発送時追跡番号(伝票番号)（必須） |
-| note | 備考（任意） |
+| Name          | Required    | Description                                                 |
+|---------------|-------------|-------------------------------------------------------------|
+| order_code | 必須 | 弊社が付与するオーダーをユニークにするID |
+| shipping_number | 必須 | 発送時追跡番号(伝票番号) |
+| note | 任意 | 備考 |
 
 ## リクエスト例
 ```json
@@ -29,7 +26,9 @@ Content-Type: application/json
 ```
 
 ## レスポンス例
-正常時HTTPコード201を返します
+```json
+201 Created
+```
 
 ## エラーレスポンス例
 ```json
@@ -38,6 +37,16 @@ Content-Type: application/json
     {
       "order_code": "ECN000110189822",
       "message": "存在しない注文番号です"
+    }
+  ]
+}
+```
+```json
+{
+  "errors":[
+    {
+      "order_code": "ECN000110189822",
+      "message": "既に出荷した注文番号です"
     }
   ]
 }
