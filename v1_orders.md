@@ -71,4 +71,3 @@ GET /api/v1/orders?start_ordered=2017-06-01 00:00:00&end_ordered=2017-07-01 00:0
   商品ごとの数量
 * order_date
   注文日時（yyyy-mm-dd hh:mm:ss）
-  注文日時のタイムゾーンはJSTとなっております。
