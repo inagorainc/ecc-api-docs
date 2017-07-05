@@ -23,7 +23,7 @@ Content-Type: application/json
 ## エラーレスポンスの例
 複数の注文を送った場合、処理が成功したものはそのまま反映されます。
 ```json
-HTTP/1.1 400 Bad Request
+400 Bad Request
 
 {
   "errors":[
@@ -36,7 +36,7 @@ HTTP/1.1 400 Bad Request
 }
 ```
 ```json
-HTTP/1.1 400 Bad Request
+400 Bad Request
 
 {
   "errors":[
