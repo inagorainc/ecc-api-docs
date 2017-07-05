@@ -36,13 +36,17 @@ Content-Type: application/json
 
 ## エラーレスポンス例
 ```json
+400 Bad Request
+
 {
   "errors":[
     {
+      "code": 3004,
       "jancode": "6853856647891",
-      "message": "存在しない商品です"
+      "message": "存在しないJANCODEです"
     },
     {
+      "code": 3005,
       "sku_code": "sku5567",
       "message": "存在しないSKUコードです"
     }
