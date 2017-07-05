@@ -53,3 +53,16 @@ Content-Type: application/json
   ]
 }
 ```
+```json
+400 Bad Request
+
+{
+  "errors":[
+    {
+      "code": 3006,
+      "sku_code": "sku5567",
+      "message": "在庫数量が正しくありません"
+    }
+  ]
+}
+```
