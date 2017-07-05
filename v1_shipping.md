@@ -31,6 +31,8 @@ Content-Type: application/json
 
 ## エラーレスポンス例
 ```json
+400 Bad Request
+
 {
   "errors":[
     {
@@ -42,6 +44,8 @@ Content-Type: application/json
 }
 ```
 ```json
+400 Bad Request
+
 {
   "errors":[
     {
