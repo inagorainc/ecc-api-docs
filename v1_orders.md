@@ -6,15 +6,15 @@
 
 | Name          | required   | Description                                                 |
 |---------------|----|-------------------------------------------------------------|
-| start_ordered | 任意 | 注文日時指定開始 yyyy-mm-dd |
-| end_ordered | 任意 | 注文日時指定終了 yyyy-mm-dd （指定時刻未満を取得する） |
+| start_ordered | 任意 | 注文日時指定開始 yyyy-mm-dd hh:mm:ss |
+| end_ordered | 任意 | 注文日時指定終了 yyyy-mm-dd hh:mm:ss （指定時刻未満を取得する） |
 
-※ `yyyy-mm-dd`は、`yyyy-mm-dd 00:00:00`に内部変換されます
 
 ## リクエスト例
 ```json
-GET /api/v1/orders?start_ordered=2017-06-01&end_ordered=2017-07-01
+GET /api/v1/orders?start_ordered=2017-06-01 00:00:00&end_ordered=2017-07-01 00:00:00
 ```
+以上の結果は、6月1日0時0分0秒~6月30日23時59分59秒までのデータを取得します。
 
 ## レスポンス例
 ```json
