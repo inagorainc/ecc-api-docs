@@ -5,7 +5,7 @@ APIドキュメントです。
 サプライヤー管理システム内の連携用API資料です。
 
 ## 仕様
-### エンドポイント
+### ホスト
 * staging環境
 
   https://supplier.stg.wonderfull.jp/
