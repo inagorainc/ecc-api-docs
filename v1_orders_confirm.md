@@ -1,5 +1,5 @@
 # POST /api/v1/orders/confirm
-注文受領が終了したことを通知
+注文受領したことを通知。通知されたものはステータスが変更され、注文取得API`/api/v1/orders`を実行しても取得されなくなります。
 
 ## リクエストパラメータ
 | Name          | Required      | Description                                                 |
@@ -18,6 +18,8 @@ Content-Type: application/json
 ## レスポンスの例
 ```json
 201 Created
+
+{}
 ```
 
 ## エラーレスポンスの例
