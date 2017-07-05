@@ -69,6 +69,9 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 ### エラーコード
 * [エラーコード一覧](error_code.md)
 
+### タイムゾーン
+すべてJST（UTC+9）となっております。
+
 ## API
 
 ## 注文
