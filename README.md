@@ -1,4 +1,4 @@
-# ECC APIドキュメント
+# Supplier APIドキュメント
 APIドキュメントです。
 
 ## 概要
@@ -51,10 +51,10 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 
 ## 注文
 * [GET /api/v1/orders](v1_orders.md) - 注文情報一覧を取得
-* [POST /api/v1/orders/confirm](v1_orders_confirm.md) - 注文確定を通知
+* [POST /api/v1/orders/confirm](v1_orders_confirm.md) - 注文受領を通知
 
-## 発送
-* [POST /api/v1/shipping](v1_shipping.md) - 発送情報を登録
+## 出荷
+* [POST /api/v1/shipping](v1_shipping.md) - 出荷情報を通知
 
 ## 在庫
 * [PUT /api/v1/stock](v1_stock.md) - 在庫更新
