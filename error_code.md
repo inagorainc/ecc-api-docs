@@ -5,7 +5,7 @@
 
 ## レスポンス例
 ```json
-HTTP/1.1 400 Bad Request
+400 Bad Request
 
 {
   "errors":[
