@@ -4,14 +4,16 @@
 
 ## リクエストパラメータ
 
-| Name          | Description                                                 |
-|---------------|-------------------------------------------------------------|
-| start_ordered | 注文日時指定開始　yyyy-mm-dd または yyyy-mm-dd hh:mm:ss（任意） |
-| end_ordered | 注文日時指定終了yyyy-mm-dd または yyyy-mm-dd hh:mm:ss（任意） |
+| Name          | required   | Description                                                 |
+|---------------|----|-------------------------------------------------------------|
+| start_ordered | 任意 | 注文日時指定開始 yyyy-mm-dd |
+| end_ordered | 任意 | 注文日時指定終了 yyyy-mm-dd （指定時刻未満を取得する） |
+
+※ `yyyy-mm-dd`は、`yyyy-mm-dd 00:00:00`に内部変換されます
 
 ## リクエスト例
 ```json
-GET /api/v1/orders?start_ordered=2017-06-01&end_ordered=2017-06-30 23:59:59
+GET /api/v1/orders?start_ordered=2017-06-01&end_ordered=2017-07-01
 ```
 
 ## レスポンス例
@@ -68,4 +70,5 @@ GET /api/v1/orders?start_ordered=2017-06-01&end_ordered=2017-06-30 23:59:59
   * quantity
   商品ごとの数量
 * order_date
-  注文日時（yyyy-mm-dd hh:mm:ss+0900）
+  注文日時（yyyy-mm-dd hh:mm:ss）
+  注文日時のタイムゾーンはJSTとなっております。
