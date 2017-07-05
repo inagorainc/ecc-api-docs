@@ -51,7 +51,20 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
   * POST 201 created
   * PUT 204 no content
 
-異常時、HTTPステータスコード400を返します。
+異常時、HTTPステータスコード400と、エラーメッセージを返します。
+```json
+HTTP/1.1 400 Bad Request
+
+{
+  "errors": [
+    {
+      "code": 3001,
+      "order_code": "ECN000110189822",
+      "message": "存在しない注文番号です"
+    }
+  ]
+}
+```
 
 ### エラーコード
 * [エラーコード一覧](error_code.md)
