@@ -35,7 +35,7 @@ Content-Type: application/json
 {
   "errors":[
     {
-      "code": "3001",
+      "code": 3001,
       "order_code": "ECN000110189822",
       "message": "存在しない注文番号です"
     }
@@ -46,7 +46,7 @@ Content-Type: application/json
 {
   "errors":[
     {
-      "code": "3003",
+      "code": 3003,
       "order_code": "ECN000110189822",
       "message": "既に出荷した注文番号です"
     }
