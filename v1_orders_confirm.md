@@ -37,7 +37,7 @@ Content-Type: application/json
   "errors":[
     {
       "order_code": "ECN000110189822",
-      "message": "既に受領された注文番号です"
+      "message": "既に受領された注文番号です"
     }
   ]
 }
