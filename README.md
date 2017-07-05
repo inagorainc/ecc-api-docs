@@ -80,24 +80,3 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 
 ## 在庫
 * [PUT /api/v1/stock](v1_stock.md) - 在庫更新
-
-## 共通エラー
-```
-{
-    "error": {
-       "message": "Not Found ACCESS-KEY or ACCESS-TIMESTAMP or ACCESS-SIGNATURE!"
-    }
-}
-
-{
-    "error": {
-       "message": "Invalid Access Auth!"
-    }
- }
-
-{
-    "error": {
-       "message": "Invalid Http method!"
-    }
-}
-```
