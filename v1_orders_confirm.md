@@ -17,9 +17,8 @@ Content-Type: application/json
 
 ## レスポンスの例
 ```json
-201 Created
+204 No Content
 ```
-※bodyは返しません
 
 ## エラーレスポンスの例
 複数の注文を送った場合、処理が成功したものはそのまま反映されます。
