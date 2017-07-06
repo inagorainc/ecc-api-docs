@@ -26,9 +26,8 @@ Content-Type: application/json
 
 ## レスポンス例
 ```json
-201 Created
+204 No Content
 ```
-※bodyは返しません
 
 ## エラーレスポンス例
 ```json
