@@ -1,4 +1,4 @@
-# PUT /api/v1/stock
+# POST /api/v1/stock
 商品の在庫に変動があった場合に叩いていただくAPI。
 
 ## リクエストパラメータ
