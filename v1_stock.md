@@ -7,7 +7,7 @@
 |---------------|--------------|-------------------------------------------------------------|
 | jancode | jancode/sku_codeとどちらか必須 | JAN CODE |
 | sku_code | jancode/sku_codeとどちらか必須 | 商品SKUコード |
-| stock | 必須 | 在庫数　（負数を含まない、整数値） |
+| quantity | 必須 | 在庫数　（負数を含まない、整数値） |
 
 ## リクエスト例
 ```json
@@ -16,15 +16,15 @@ Content-Type: application/json
 [
   {
     "jancode": "6853856647891",
-    "stock": 30
+    "quantity": 30
   },
   {
     "sku_code": "sku5567",
-    "stock": 25
+    "quantity": 25
   },
   {
     "jancode": "6853856647708",
-    "stock": 10
+    "quantity": 10
   }
 ]
 ```
