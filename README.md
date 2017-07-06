@@ -47,9 +47,8 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 
 正常時、以下のHTTPステータスコードを返します。
 
-  * GET 200 ok
-  * POST 201 created
-  * PUT 204 no content
+* 200 OK - 返すべきレスポンスがある場合
+* 204 No Content - 特に返すレスポンスがない場合
 
 異常時、HTTPステータスコード400と、エラーメッセージを返します。
 ```json
@@ -82,4 +81,4 @@ POSTのリクエストに対しては、Content-Typeヘッダに「application/j
 * [POST /api/v1/shipping](v1_shipping.md) - 出荷情報を通知
 
 ## 在庫
-* [PUT /api/v1/stock](v1_stock.md) - 在庫更新
+* [POST /api/v1/stock](v1_stock.md) - 在庫更新
