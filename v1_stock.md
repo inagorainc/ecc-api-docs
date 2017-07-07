@@ -9,6 +9,8 @@
 | sku_code | jancode/sku_codeとどちらか必須 | 商品SKUコード |
 | quantity | 必須 | 在庫数　（負数を含まない、整数値） |
 
+jancodeとsku_code、どちらも指定していた場合、**jancodeを優先します**
+
 ## リクエスト例
 ```json
 Content-Type: application/json
