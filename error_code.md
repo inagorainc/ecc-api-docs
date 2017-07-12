@@ -28,8 +28,6 @@
 ## エラーコード内容
 | Code | Description |
 |------|-------------|
-| 1001 | URLが間違っています    |
-| 1002 | HTTPメソッドが違います    |
 | 2001 | ACCESS-KEY、ACCESS-TIMESTAMP、ACCESS-SIGNATUREのいずれかが存在しません    |
 | 2002 | API KEY認証に失敗しました    |
 | 3001 | 存在しない注文番号です    |
