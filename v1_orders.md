@@ -18,6 +18,7 @@ GET /api/v1/orders?start_ordered=2017-06-01 00:00:00&end_ordered=2017-07-01 00:0
 
 ## レスポンス例
 ```json
+200 OK
 {
 "data":[
   {
@@ -51,6 +52,14 @@ GET /api/v1/orders?start_ordered=2017-06-01 00:00:00&end_ordered=2017-07-01 00:0
     "order_date":"2017-06-21 12:05:55"
   }
 ]
+}
+```
+
+取得するデータが1件も無い場合
+```json
+200 OK
+{
+  "data":[]
 }
 ```
 
