@@ -23,6 +23,7 @@ GET /api/v1/orders?start_ordered=2017-06-01 00:00:00&end_ordered=2017-07-01 00:0
 "data":[
   {
     "order_code":"ECN000110189822",
+    "order_date":"2017-06-21 11:55:50",
     "orders":[
       {
         "jancode":"6853856647891",
@@ -30,11 +31,11 @@ GET /api/v1/orders?start_ordered=2017-06-01 00:00:00&end_ordered=2017-07-01 00:0
         "price":530,
         "quantity":1
       }
-    ],
-    "order_date":"2017-06-21 11:55:50"
+    ]
   },
   {
     "order_code":"ECN000110189823",
+    "order_date":"2017-06-21 12:05:55",
     "orders":[
       {
         "jancode":"6853856647891",
@@ -48,8 +49,7 @@ GET /api/v1/orders?start_ordered=2017-06-01 00:00:00&end_ordered=2017-07-01 00:0
         "price":1000,
         "quantity":2
       }
-    ],
-    "order_date":"2017-06-21 12:05:55"
+    ]
   }
 ]
 }
